@@ -15,6 +15,14 @@ var DateFormats = {
   long: "MMM Do HH:mm"
 };
 
+
+// ===== Passport ====
+
+
+/* Express app ROUTING */
+//app.use('/auth', require('./controllers'));
+require("./controller/routes")(app);
+
 // ==== Starting Server =====
 app.listen(PORT, () => {
 	console.log(`App listening on PORT: ${PORT}`)
